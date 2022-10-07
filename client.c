@@ -1,7 +1,16 @@
-/* 	Semplice programma client che invia un messaggio al server
-    Per compilarlo: gcc client.c -o client
-    Per avviarlo: ./client 127.0.0.1(oppure l'ip desiderato) 5555
+/***************************************************************************
+	file				 : client.c
+    begin                : 2019
+    copyright            : (C) 2019 by Giancarlo Martini and friends
+    email                : gm@giancarlomartini.it
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
 */
+
 #include <arpa/inet.h>
 #include <netdb.h>
 #include <netinet/in.h>
@@ -86,7 +95,7 @@ int main(int argc, char *argv[])
 
 	/* Stampa la risposta */
 	printf("%s\n", buffer);
-	
+
 	/* Chiude il socket */
 	close (sock_fd);
 	return 0;

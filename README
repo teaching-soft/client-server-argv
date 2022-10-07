@@ -1,2 +1,8 @@
 Semplice coppia di programmi client e server, l'ip e la porta vengono passata sulla
 riga di comando
+
+Per compilare il server: gcc server.c -o server
+Per avviarlo: ./server 5555
+
+Per compilare il client: gcc client.c -o client
+Per avviarlo: ./client 127.0.0.1(oppure l'ip desiderato) 5555
